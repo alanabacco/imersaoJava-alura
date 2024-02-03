@@ -1,5 +1,6 @@
 public class Conteudo {
 
+  // final significa que ninguém vai conseguir mudar depois de criado
   private final String titulo;
   private final String urlImagem;
 

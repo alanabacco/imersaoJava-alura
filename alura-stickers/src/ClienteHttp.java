@@ -5,10 +5,9 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 
+// fazer uma conexão http e buscar os filmes
 public class ClienteHttp {
-
   public String buscaDados(String url) {
-
     try {
       URI endereco = URI.create(url);
       HttpClient cliente = HttpClient.newHttpClient();
@@ -19,6 +18,5 @@ public class ClienteHttp {
     } catch (IOException | InterruptedException ex) {
       throw new RuntimeException(ex);
     }
-
   }
 }

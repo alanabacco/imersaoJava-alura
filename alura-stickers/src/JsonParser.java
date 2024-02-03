@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class JsonParser {
 
-  // o Pattern é pra representar uma experessao regular no JAVA
+  // o Pattern é pra representar uma expressão regular no JAVA
   private static final Pattern REGEX_ITEMS = Pattern.compile(".*\\[(.+)\\].*");
   private static final Pattern REGEX_ATRIBUTOS_JSON = Pattern.compile("\"(.+?)\":\"(.*?)\"");
 
