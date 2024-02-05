@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-// @s são mecânicas de anotação
+// @s são mecânicas de anotação / são coisas do spring
 @RestController
 public class LinguagemController {
 
@@ -18,7 +18,7 @@ public class LinguagemController {
   @GetMapping("/linguagens")
   public List<Linguagem> obterLinguagens() {
     List<Linguagem> linguagens = repositorio.findAll();
-    return linguagens;
+    return linguagens; // já retorna em formato json
   }
 
   @PostMapping("/linguagens")

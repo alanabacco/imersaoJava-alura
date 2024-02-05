@@ -3,7 +3,7 @@ package br.com.alura.linguagens.api;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "linguagens")
+@Document(collection = "linguagens") // nome da coleção no MongoDB
 public class Linguagem {
 
   @Id
@@ -12,8 +12,7 @@ public class Linguagem {
   private String imagem;
   private int classificacao;
 
-  public Linguagem() {
-  }
+  public Linguagem() {}
 
   public Linguagem(String nome, String imagem, int classificacao) {
     this.nome = nome;
@@ -32,5 +31,4 @@ public class Linguagem {
   public int getClassificacao() {
     return classificacao;
   }
-
 }

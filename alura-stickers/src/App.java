@@ -5,12 +5,11 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        // String url = "https://imersaojava-linguagens-api.herokuapp.com/linguagens";
         String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2024-01-31&end_date=2024-02-02";
-
-        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoImdb();
-        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDasLinguagens(); // do projeto linguagens-api
         ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
+        
+        // String url = "http://localhost:8080/linguagens";
+        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDasLinguagens(); // do projeto linguagens-api
 
         var http = new ClienteHttp();
         String json = http.buscaDados(url);
